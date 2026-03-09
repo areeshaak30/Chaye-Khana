@@ -1,4 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import mobileBG from "../assets/pngs/mobileBG.png";
+import aboutUsBG from "../assets/pngs/aboutUsBG.png";
+import cupOfTea from "../assets/pngs/cupOfTea.png";
 
 const AboutUs = () => {
   const [isAnimated, setIsAnimated] = useState(false);
@@ -40,13 +43,13 @@ const AboutUs = () => {
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/src/assets/pngs/mobileBG.png')",
+          backgroundImage: `url(${mobileBG})`,
         }}
       />
       <div
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat hidden lg:block"
         style={{
-          backgroundImage: "url('/src/assets/pngs/aboutUsBG.png')",
+          backgroundImage: `url(${aboutUsBG})`,
         }}
       />
 
@@ -80,7 +83,7 @@ const AboutUs = () => {
 
             <div className="flex items-center justify-center">
               <img
-                src="/src/assets/pngs/cupOfTea.png"
+                src={cupOfTea}
                 alt="Cup of Tea"
                 className="w-[500px] h-[500px] xl:w-[500px] xl:h-[500px] 2xl:w-[685px] 2xl:h-[675px] object-contain animate-rotate"
               />
@@ -125,7 +128,7 @@ const AboutUs = () => {
 
             <div className="flex-shrink-0 flex items-center justify-center">
               <img
-                src="/src/assets/pngs/cupOfTea.png"
+                src={cupOfTea}
                 alt="Cup of Tea"
                 className="w-64 h-64 xl:w-[500px] xl:h-[500px] 2xl:w-[685px] 2xl:h-[675px] object-contain animate-rotate"
               />

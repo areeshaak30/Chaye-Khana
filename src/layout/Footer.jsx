@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
+import whiteLogo from "../assets/pngs/whiteLogo.png";
+import footerBG from "../assets/pngs/footerBG.png";
+import deliveryBoy from "../assets/pngs/deliveryBoy.png";
 
 const Footer = () => {
   const [isAnimated, setIsAnimated] = useState(false);
@@ -44,7 +47,7 @@ const Footer = () => {
       ref={footerRef}
       className="relative w-full bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url('/src/assets/pngs/footerBG.png')`,
+        backgroundImage: `url(${footerBG})`,
       }}
     >
       <div className="relative z-10 w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 sm:py-10 md:pb-12 md:pt-[210px]">
@@ -54,7 +57,7 @@ const Footer = () => {
           }`}
         >
           <img
-            src="/src/assets/pngs/whiteLogo.png"
+            src={whiteLogo}
             alt="Chaaye Khana Logo"
             className="h-12 sm:h-14 md:h-16 lg:h-[160px] lg:w-[210px] w-auto"
           />
@@ -99,7 +102,7 @@ const Footer = () => {
               }`}
             >
               <img
-                src="/src/assets/pngs/deliveryBoy.png"
+                src={deliveryBoy}
                 alt="Delivery Boy"
                 className="w-[300px] h-auto object-contain animate-delivery-boy"
               />
@@ -143,7 +146,7 @@ const Footer = () => {
                 }`}
               >
                 <img
-                  src="/src/assets/pngs/deliveryBoy.png"
+                  src={deliveryBoy}
                   alt="Delivery Boy"
                   className="w-[500px] h-[400px] object-contain animate-delivery-boy"
                 />
